@@ -1,0 +1,18 @@
+version: '3.6'
+
+services:
+  resume-api-rails:
+    build: .
+    volumes:
+      - ./:/resume-api-rails
+    working_dir: /resume-api-rails
+    command: puma
+    ports:
+      - 3000:3000
+    depends_on:
+      - resume-postgres
+    environment:
+      DATABASE_URL: postgres://postgres@resume-postgres
+
+  resume-postgres:
+    image: postgres:10.3-alpine
