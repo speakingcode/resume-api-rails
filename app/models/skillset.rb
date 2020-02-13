@@ -1,3 +1,3 @@
 class Skillset < ApplicationRecord
-  has_many :skills
+  belongs_to :resume
 end

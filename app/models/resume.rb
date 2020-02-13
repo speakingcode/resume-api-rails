@@ -3,4 +3,8 @@ class Resume < ApplicationRecord
            :class_name => "Job"
 
   has_many :skillsets
+
+  accepts_nested_attributes_for :work_history,
+                                :skillsets
+
 end
