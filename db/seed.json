@@ -12,7 +12,7 @@
       "highlights": [
         "Designed and developed hardware enabled SaaS product for restaurant/bar operators to monitor bar activity, events, and inventory in real time",
         "Built front-end single-page React web app using React 16, React Router, Redux, Redux-ORM, Context API, Apollo GraphQL, Nivo Charts, Chart.js, Yup/Formik, Bootstrap/Reactstrap for UI components, Jest/Enzyme",
-        "Developed RESTful API and GraphQL API microservices via Ruby on Rails, graphql-ruby, RSpec/FactoryBot/Faker",
+        "Developed RESTful API and GraphQL API microservices via Ruby on Rails, graphql-ruby, Devise/devise-jwt, Cancan, RSpec/FactoryBot/Faker",
         "Managed environments and infrastructure via Docker/Docker Swarm",
         "Established and managed agile development processes and workflows",
         "Oversaw contractors and internal developers",
