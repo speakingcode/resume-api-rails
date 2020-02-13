@@ -9,7 +9,7 @@ class CreateJobs < ActiveRecord::Migration[5.0]
       t.string :start_date
       t.string :end_date
 
-      t.text :highlights
+      t.text :highlights,
              :array   => true,
              :default => []
 
