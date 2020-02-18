@@ -116,6 +116,8 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
+    wicked_pdf (1.4.0)
+      activesupport
 
 PLATFORMS
   ruby
@@ -130,6 +132,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
+  wicked_pdf
 
 BUNDLED WITH
    2.1.2
