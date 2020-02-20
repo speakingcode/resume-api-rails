@@ -4,7 +4,15 @@ FROM ruby:2.7.0-alpine3.11
 RUN apk add --update build-base postgresql-dev tzdata
 
 # dependency for wicked_pdf to generate pdf files
-RUN apk add wkhtmltopdf
+RUN apk add \
+  wkhtmltopdf \
+  fontconfig \
+  freetype \
+  ttf-dejavu \
+  ttf-droid \
+  ttf-freefont \
+  ttf-liberation \
+  ttf-ubuntu-font-family
 
 RUN gem install bundler
 
