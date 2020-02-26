@@ -13,6 +13,8 @@ services:
       - resume-postgres
     environment:
       DATABASE_URL: postgres://postgres@resume-postgres
+    tty: true
+    stdin_open: true
 
   resume-postgres:
     image: postgres:10.3-alpine
