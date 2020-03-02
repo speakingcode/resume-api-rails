@@ -3,6 +3,127 @@
     <title>Resume</title>
   </head>
   <body>
-    Daniel Lissner's Resume
+    <div
+      class="resume"
+      style="padding: 10%;"
+    >
+      <div
+        class="resume-header"
+        style="text-align: right;"
+      >
+        <div>
+          <%= resume.name %>
+        </div>
+        <div>
+          <%= resume.title %>
+        </div>
+      </div>
+      <div class="work-history">
+        <h3>Work History</h3>
+        <% resume.work_history.each do |job| %>
+
+          <div class="job">
+            <h4 class="job-title"
+                style="margin-bottom: 0px;"
+            >
+            <%= "#{job.title}, #{job.start_date} - #{job.end_date}" %>
+            </h4>
+            <div class="job-company"
+              style="margin-top: 0px; padding-top: 0px;"
+            >
+              <%= "#{job.company_name}, #{job.team_name ? job.team_name + ', ' : ''} #{job.location}" %>
+            </div>
+            <div class="job-highlights">
+              <ul>
+              <% job.highlights.each do |highlight| %>
+                <li><%= highlight %></li>
+              <% end %>
+              </ul>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="startup-experience">
+        <h3>Startup Experience</h3>
+        <% resume.startup_experience.each do |startup| %>
+
+          <div class="startup">
+            <h4 class="startup-title"
+                style="margin-bottom: 0px;"
+            >
+            <%= "#{startup.title}, #{startup.start_date} - #{startup.end_date}" %>
+            </h4>
+            <div class="startup-company"
+              style="margin-top: 0px; padding-top: 0px;"
+            >
+              <%= "#{startup.company_name}, #{startup.location}" %>
+            </div>
+            <div class="startup-highlights">
+              <ul>
+              <% startup.highlights.each do |highlight| %>
+                <li><%= highlight %></li>
+              <% end %>
+              </ul>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="skills">
+        <% resume.skillsets.each do |skillset| %>
+
+          <div class="skillset">
+            <h3 class="skillset-title"
+                style="margin-bottom: 0px;"
+            >
+              <%= "#{skillset.title}" %>
+            </h3>
+            <div class="skills">
+              <table
+                class="skill-list"
+              >
+                  <% skillset.skills.each_with_index do |skill, index| %>
+                    <% if (index % 3 )== 0 %>
+                      <tr>
+                    <% end %>
+                    <td
+                      style="padding-right: 100px; width: 600px;"
+                    >
+                      <li><%= skill %></li>
+                    </td>
+                    <% if (index % 3) == 2 %>
+                      </tr>
+                    <% end %>
+                  <% end %>
+              </table>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="community-efforts">
+        <h3>Community</h3>
+        <% resume.community_efforts.each do |comm| %>
+
+          <li class="community-effort">
+            <%= "#{comm.description}#{comm.date ? ' - ' + comm.date : ''} #{comm.url ? '(' + comm.url + ')' : ''}" %>
+          </li>
+        <% end %>
+      </div>
+
+      <div class="educations">
+        <h3>Education</h3>
+        <% resume.educations.each do |edu| %>
+          <div class="education">
+            <h4
+              class="education-degree"
+              style="margin-bottom: 0px;"
+            >
+              <%= "#{edu.degree}, #{edu.department}" %>
+            </h4>
+            <%= "#{edu.institution}, #{edu.year}" %>
+          </div>
+        <% end %>
+      </div>
+
+    </div>
   </body>
 </html>

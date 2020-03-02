@@ -1,6 +1,6 @@
-class CreateJobs < ActiveRecord::Migration[5.0]
+class CreateStartups < ActiveRecord::Migration[5.0]
   def change
-    create_table :jobs do |t|
+    create_table :startups do |t|
       t.belongs_to :resume
 
       t.string :title

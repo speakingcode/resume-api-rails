@@ -6,9 +6,9 @@ services:
     volumes:
       - ./:/resume-api-rails
     working_dir: /resume-api-rails
-    command: puma
+    command: puma -p 3069
     ports:
-      - 3000:3000
+      - 3069:3069
     depends_on:
       - resume-postgres
     environment:

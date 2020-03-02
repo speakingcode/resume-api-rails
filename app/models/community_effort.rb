@@ -1,0 +1,2 @@
+class CommunityEffort < ApplicationRecord
+end

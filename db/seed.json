@@ -1,7 +1,8 @@
 {
   "name": "Daniel Sean Lissner",
   "title": "Software Engineer/Developer",
-  "summary": "Motivated, supportive, self-starting software engineer with experience throughout the stack and emphasis on quality, good practices, and simplicity",
+  "summary": "Motivated, supportive, self-starting software engineer with experience throughout the stack emphasizing quality, best practices, and simplicity",
+
   "work_history_attributes": [
     {
       "title": "Senior Software Engineer",
@@ -11,7 +12,7 @@
       "end_date": "Present",
       "highlights": [
         "Designed and developed hardware enabled SaaS product for restaurant/bar operators to monitor bar activity, events, and inventory in real time",
-        "Built front-end single-page React web app using React 16, React Router, Redux, Redux-ORM, Context API, Apollo GraphQL, Nivo Charts, Chart.js, Yup/Formik, Bootstrap/Reactstrap for UI components, Jest/Enzyme",
+        "Built front-end single-page React web app using React 16, React Router, Redux, Redux-ORM, Apollo GraphQL, Nivo Charts, Chart.js, Yup/Formik, Bootstrap/Reactstrap, Jest/Enzyme",
         "Developed RESTful API and GraphQL API microservices via Ruby on Rails, graphql-ruby, Devise/devise-jwt, Cancan, RSpec/FactoryBot/Faker",
         "Managed environments and infrastructure via Docker/Docker Swarm",
         "Established and managed agile development processes and workflows",
@@ -20,6 +21,7 @@
       ]
     }
   ],
+
   "skillsets_attributes": [
     {
       "title": "Front-End Frameworks, Libraries and Tools",
@@ -59,6 +61,51 @@
         "Bash",
         "Linux (Arch, RHEL/Fedora, Debian)"
       ]
+    }
+  ],
+
+  "startup_experience_attributes" : [
+    {
+      "title": "Co-founder/CTO",
+      "company_name": "MentorMe, Inc.",
+      "location": "Memphis, TN",
+      "start_date": "March 2013",
+      "end_date": "July 2019",
+      "url": "http://getmentorme.co",
+      "highlights": [
+        "Designed and developed SaaS platform for managing mentoring programs featuring matching, messaging, custom on-boarding and application workflows, check-ins, reporting and exporting, SMS notifications",
+        "Traditional Rails \"monolith\" app with Devise, ActiveRecord, Formtastic, ActiveAdmin, paperclip, ERB templates,  RSpec, etc. with jQuery and Bootstrap for UI",
+        "Deployed on Heroku and integrated with multiple cloud services (MailChimp, AWS S3, Twilio, etc.)"
+      ]
+    }
+  ],
+
+  "community_efforts_attributes": [
+    {
+      "description" : "Founding board-member of Memphis Technology Foundation",
+      "url": "http://memphistechnology.org",
+      "date" : "2014"
+    },
+    {
+      "description" : "Organizer of Memphis Java User Group",
+      "date" : "2014 - 2016"
+    },
+    {
+      "description" : "Co-organizer of Security B-Sides Memphis information security conference",
+      "date": "2013 - 2014"
+    },
+    {
+      "description" : "Co-founder/developer/community organizer of TurtleCoin",
+      "url" :"http://turtlecoin.lol"
+    }
+  ],
+
+  "educations_attributes" : [
+    {
+      "degree" : "B.S.",
+      "department" : "Computer Science and Mathematical Science",
+      "institution" : "University of Memphis",
+      "year" : "2011"
     }
   ]
 }
