@@ -68,6 +68,16 @@
         <% end %>
       </div>
 
+      <div class="community-efforts">
+        <h3>Community</h3>
+        <% resume.community_efforts.each do |comm| %>
+
+          <li class="community-effort">
+            <%= "#{comm.description}#{comm.date ? ' - ' + comm.date : ''} #{comm.url ? '(' + comm.url + ')' : ''}" %>
+          </li>
+        <% end %>
+      </div>
+
       <div class="skills">
         <% resume.skillsets.each do |skillset| %>
 
@@ -86,7 +96,7 @@
                       <tr>
                     <% end %>
                     <td
-                      style="padding-right: 100px; width: 600px;"
+                      style="padding-right: 80px; width: 700px;"
                     >
                       <li><%= skill %></li>
                     </td>
@@ -96,16 +106,6 @@
                   <% end %>
               </table>
           </div>
-        <% end %>
-      </div>
-
-      <div class="community-efforts">
-        <h3>Community</h3>
-        <% resume.community_efforts.each do |comm| %>
-
-          <li class="community-effort">
-            <%= "#{comm.description}#{comm.date ? ' - ' + comm.date : ''} #{comm.url ? '(' + comm.url + ')' : ''}" %>
-          </li>
         <% end %>
       </div>
 
