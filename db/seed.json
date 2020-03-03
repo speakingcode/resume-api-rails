@@ -1,6 +1,9 @@
 {
   "name" : "Daniel Sean Lissner",
   "title" : "Software Engineer/Developer",
+  "website" : "http://speakingcode.com",
+  "github" : "https://github.com/speakingcode",
+  "stack-overflow" : "https://stackoverflow.com/users/1015292/speakingcode",
   "summary" : "Motivated, supportive, self-starting software engineer with experience throughout the stack emphasizing quality, best practices, and simplicity",
 
   "work_history_attributes" : [
@@ -187,6 +190,19 @@
     {
       "title": "Linux",
       "skills": [
+        "Arch Linux",
+        "Debian/Ubuntu",
+        "Fedora/CentOS",
+        "Bash",
+        "top/htop",
+        "ssh",
+        "rsync",
+        "zsh",
+        "Vim",
+        "wget",
+        "Ncat",
+        "Grep",
+        "awesomewm"
       ]
     },
 
@@ -196,8 +212,12 @@
         "Python",
         "Flask",
         "Java",
-        "Spring/Spring Boot",
-        "Groovy/Groovy on Grails",
+        "Spring",
+        "Spring Boot",
+        "Groovy",
+        "Grails",
+        "Maven",
+        "Gradle",
         "Wordpress",
         "PHP",
         "Go",
