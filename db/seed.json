@@ -1,65 +1,207 @@
 {
-  "name": "Daniel Sean Lissner",
-  "title": "Software Engineer/Developer",
-  "summary": "Motivated, supportive, self-starting software engineer with experience throughout the stack emphasizing quality, best practices, and simplicity",
+  "name" : "Daniel Sean Lissner",
+  "title" : "Software Engineer/Developer",
+  "summary" : "Motivated, supportive, self-starting software engineer with experience throughout the stack emphasizing quality, best practices, and simplicity",
 
-  "work_history_attributes": [
+  "work_history_attributes" : [
     {
-      "title": "Senior Software Engineer",
-      "company_name": "WeighUp",
-      "location": "Memphis, TN",
-      "start_date": "November 2018",
-      "end_date": "Present",
-      "highlights": [
-        "Designed and developed hardware enabled SaaS product for restaurant/bar operators to monitor bar activity, events, and inventory in real time",
-        "Built front-end single-page React web app using React 16, React Router, Redux, Redux-ORM, Apollo GraphQL, Nivo Charts, Chart.js, Yup/Formik, Bootstrap/Reactstrap, Jest/Enzyme",
-        "Developed RESTful API and GraphQL API microservices via Ruby on Rails, graphql-ruby, Devise/devise-jwt, Cancan, RSpec/FactoryBot/Faker",
-        "Managed environments and infrastructure via Docker/Docker Swarm",
-        "Established and managed agile development processes and workflows",
-        "Oversaw contractors and internal developers",
-        "Worked with stakeholders to define product and features, establish requirements and set deliverables and timelines"
+      "title" : "Senior Software Engineer",
+      "company_name" : "WeighUp",
+      "location" : "Memphis, TN / Remote",
+      "start_date" : "November 2018",
+      "end_date" : "Present",
+      "highlights" : [
+        "Designed and developed hardware enabled SaaS platform for restaurant/bar operators to monitor bar activity, events, and inventory in real time via sensors and point-of-sale integration",
+        "Built RESTful API and GraphQL API microservices via Ruby on Rails with JWT authentication, role-based access control, per-client API keys, logging and metrics (via ELK), push-to-client data subscriptions, etc.",
+        "Developed inferencing engine to process streams of sensor readings, detect events, and update data models ",
+        "Built front-end single-page app using React 16, Redux and Apollo GraphQL, featuring live-updating data visualizations, searchable reporting with PDF exporting, event notifications and alerts, administrative data management, user settings and preferences, etc. ",
+        "Built “Skeletor” terminal UI app via NodeJS/React/react-blessed to configure, test and debug hardware devices and view/log messages from serial port",
+        "Developed “Hub” embedded NodeJS service to manage sensors, log and transmit readings, and enable remote configuration",
+        "Established and managed development processes, operations and technology choices, managed environments and infrastructure, oversaw contractors and internal developers",
+        "Defined product and features, established requirements, set deliverables and timelines, and communicated technology strategy, concerns and decisions to stakeholders"
+      ]
+    },
+    {
+      "title" : "Software Engineer II",
+      "company_name" : "ARGO Data",
+      "team_name" : "Skunkworks R&D",
+      "location" : "Richardson, TX / Remote",
+      "start_date" : "July 2014",
+      "end_date" : "November 2018",
+      "highlights" : [
+        "Developed ARGO  Message Broker to log, route, audit and replay “HL7” healthcare messages across enterprise systems, with back-end consisting of  Apache Camel, Hibernate/Postgres, RabbitMQ, and Spring Boot REST API, and front-end SPA built with React/Redux and Material UI",
+        "Developed “Propensity to Pay” loan/payment application with Groovy/Grails RESTful API and AngularJS/Material UI front-end",
+        "Developed reference implementations, component libraries and prototypes for AngularJS, React/Redux, Groovy/Grails, Ruby on Rails, NodeJS, Java/Spring, etc. and supported multiple teams and projects",
+        "Played key role in introduction of “dev-ops” tools/practices such as integrated version control, issue tracker and build/test servers; “one-click” deployments; and dev-prod parity/infrastructure as code via Ansible, Docker"
+      ]
+    },
+    {
+      "title" : "Software Engineer",
+      "company_name" : "Mosaik Solutions",
+      "location" : "Memphis, TN",
+      "start_date" : "January 2013",
+      "end_date" : "July 2014",
+      "highlights" : [
+        "Collaboratively designed and developed “Sherlock” to manage and visualize large sets of geospatial data, featuring interactive map with layer customization, complex data tables with searching and in-place editing, job management and monitoring, file uploading and management, and support for various workflows",
+        "Built Ruby on Rails REST API with Sequel ORM, Devise and Cancan for ActiveDirectory auth, Bunny RabbitMQ connector, Tire ElasticSearch client, etc.",
+        "Collaboratively built distributed architecture with Ruby/Sinatra and Python/Flask microservices for long-running background jobs, RabbitMQ for work queue",
+        "Oversaw product conceptualization, development, and launch of the company's first mobile product, CellMaps Mobile for Android",
+        "Developed “BSid” service (Ruby/Sinatra back-end, Backbone front-end) to batch-process cell tower data and generate HTML reports"
+      ]
+    },
+    {
+      "title" : "Associate Programmer/Analyst",
+      "company_name" : "FedEx Services",
+      "team_name" : "Mobile Development Team",
+      "location" : "Memphis, TN",
+      "start_date" : "June 2012",
+      "end_date" : "December 2012",
+      "highlights" : [
+        "Lead development of FedEx Mobile for Android and FedEx Windows 8",
+        "Assisted development of Fedex Mobile for Blackberry",
+        "Implemented fedex.com tracking interface (HTML/JavaScript/jQuery)",
+        "Worked with QA to develop testing strategy and automated testing pipeline for Android, using emulators, monkeyrunner, Device Anywhere",
+        "Assisted establishing mobile development strategies and evaluating technology & platform choices"
+      ]
+    },
+    {
+      "title" : "Undergraduate Research Assistant",
+      "company_name" : "University of Memphis",
+      "team_name" : "Wireless Sensor/Mobile Ad-hoc Networks Lab",
+      "location" : "Memphis, TN",
+      "start_date" : "July 2009",
+      "end_date" : "December 2010",
+      "highlights" : [
+        "Co-researched, developed and analysed algorithms and models for AutoTrack/AutoWitness, a system for tracking stolen assets via embedded inertial sensors, using Hidden Markov Models, Open Street Map road network topology, Kalman filtering, etc.",
+        "Implemented and tested software/hardware solutions using TinyOS/nesC for wireless sensor devices (“motes”), Java for PC “base stations”, and Android for mobile/smartphone base stations ",
+        "Co-authored research paper published in ACM Sensys 2010"
       ]
     }
   ],
 
   "skillsets_attributes": [
     {
-      "title": "Front-End Frameworks, Libraries and Tools",
+      "title": "Ruby Frameworks, Libraries and Tools",
       "skills": [
-        "ReactJS/Redux",
-        "Vue.js/Vuex",
-        "GraphQL/Apollo",
-        "AngularJS",
-        "Bootstrap",
-        "MaterialUI",
-        "BackboneJS",
-        "Underscore.js/lodash",
-        "jQuery",
-        "Webpack",
-        "Gulp",
-        "Bower",
-        "Less/SASS",
-        "Mustache",
-        "Handlebars",
-        "Wordpress"
+        "Rails",
+        "Pry",
+        "Devise",
+        "Devise-jwt",
+        "Cancan",
+        "GraphQL-Ruby",
+        "Paperclip",
+        "Tire",
+        "Resque",
+        "Sidekiq",
+        "Byebug",
+        "RSpec",
+        "Wicked_pdf",
+        "Sinatra",
+        "Bunny",
+        "FactoryBot",
+        "Faker",
+        "Haml",
+        "Sequel",
+        "RVM"
       ]
     },
     {
-      "title": "Back-end Frameworks, Libraries, and Tools",
+      "title": "React Libraries and Tools",
       "skills": [
-        "Ruby on Rails",
-        "ruby-graphql",
-        "Sinatra",
-        "Python/Flask",
-        "Docker/Swarm",
+        "React DevTools",
+        "React Router",
+        "Redux",
+        "Redux-ORM",
+        "Redux DevTools",
+        "Redux",
+        "redux-logger",
+        "Redux Thunk",
+        "Styled-components",
+        "react-blessed",
+        "React-pdf",
+        "React Apollo",
+        "Reactstrap",
+        "Material-UI",
+        "CoreUI",
+        "Enzyme",
+        "React-bootstrap-table2",
+        "React Sidebar",
+        "react-chart-js2",
+        "Formik/Yup"
+      ]
+    },
+    {
+      "title": "JavaScript/NodeJS/Web Frameworks Libraries, and Tools",
+      "skills": [
+        "Vue.js/Vuex",
+        "AngularJS",
+        "BackboneJS",
+        "UnderscoreJS/lodash",
+        "jQuery",
+        "Bootstrap",
+        "Babel",
+        "ES6",
+        "Webpack",
+        "Gulp",
+        "Bower",
+        "npm/Yarn",
+        "GraphQL",
+        "Graphiql",
+        "Blessed",
+        "Express",
+        "Less/SASS",
+        "Axios",
+        "Handlebars/Mustache"
+      ]
+    },
+
+    {
+      "title": "Infrastructure & Operations Tools",
+      "skills": [
         "Ansible",
-        "Java/Spring",
+        "VirtualBox",
+        "Vagrant",
+        "Docker",
+        "Docker Swarm",
+        "Elastic/Logstash/Kibana",
+        "MetricBeat",
+        "Grafana",
+        "Github",
+        "Bamboo",
+        "Jira",
+        "TravisCI",
+        "Artifactory",
+        "PhusionPassenger",
+        "Nginx",
+        "Apache",
         "PostgreSQL",
-        "git",
-        "NodeJS/npm/Yarn",
-        "Groovy/Grails",
-        "Bash",
-        "Linux (Arch, RHEL/Fedora, Debian)"
+        "MySQL/MariaDB",
+        "MongoDB",
+        "Redis",
+        "RabbitMQ",
+        "Heroku",
+        "AWS"
+      ]
+    },
+
+    {
+      "title": "Linux",
+      "skills": [
+      ]
+    },
+
+    {
+      "title": "Other Languages, Platforms and Tools",
+      "skills": [
+        "Python",
+        "Flask",
+        "Java",
+        "Spring/Spring Boot",
+        "Groovy/Groovy on Grails",
+        "Wordpress",
+        "PHP",
+        "Go",
+        "Android"
       ]
     }
   ],
@@ -84,7 +226,7 @@
     {
       "description" : "Founding board-member of Memphis Technology Foundation",
       "url": "http://memphistechnology.org",
-      "date" : "2014"
+      "date" : "2015"
     },
     {
       "description" : "Organizer of Memphis Java User Group",
@@ -92,11 +234,33 @@
     },
     {
       "description" : "Co-organizer of Security B-Sides Memphis information security conference",
-      "date": "2013 - 2014"
+      "date" : "2013 - 2014"
+    },
+    {
+      "description" : "Multi-year volunteer & instructor for Black Girls Code",
+      "date" : "2013-2018",
+      "url" : "http://blackgirlscode.com"
+    },
+
+    {
+      "description": "Multi-year participant and co-organizer of Hack Memphis",
+      "date" : "2013 - 2018",
+      "url" : "http://hackmemphis.org"
+    },
+    {
+      "description": "Multi-year participant of GiveCamp Memphis charity hackathon",
+      "date" : "2012 - 2018",
+      "url" : "http://givecampmemphis.org"
     },
     {
       "description" : "Co-founder/developer/community organizer of TurtleCoin",
+      "date" : "2017",
       "url" :"http://turtlecoin.lol"
+    },
+    {
+        "description" : "Regular presenter at local developer meetups/user groups",
+        "url": "http://meetup.com/memphis-technology-user-groups",
+        "date" : "2011 - 2020"
     }
   ],
 
