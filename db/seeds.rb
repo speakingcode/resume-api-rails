@@ -7,8 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'json'
 
-path = Rails.root.join('db')
+path   = "#{::Rails.root}/db/seed.json"
+resume = JSON.parse(File.read(path))
 
-resume = JSON.parse(File.read path.join('seed.json'))
-
-Resume.create(resume)
+Resume.create!(resume)

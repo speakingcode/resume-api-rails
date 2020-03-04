@@ -1,15 +1,20 @@
 class Resume < ApplicationRecord
   has_many :work_history,
-           :class_name => "Job"
+           :class_name => "Job",
+           :inverse_of => :resume
 
   has_many :startup_experience,
-           :class_name => "Startup"
+           :class_name => "Startup",
+           :inverse_of => :resume
 
-  has_many :community_efforts
+  has_many :community_efforts,
+           :inverse_of => :resume
 
-  has_many :skillsets
+  has_many :skillsets,
+           :inverse_of => :resume
 
-  has_many :educations
+  has_many :educations,
+           :inverse_of => :resume
 
   accepts_nested_attributes_for :work_history,
                                 :skillsets,

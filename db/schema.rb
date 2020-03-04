@@ -55,8 +55,11 @@ ActiveRecord::Schema.define(version: 20200228180344) do
     t.string   "name"
     t.string   "title"
     t.text     "summary"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "website"
+    t.string   "github"
+    t.string   "stack_overflow"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "skillsets", force: :cascade do |t|
