@@ -20,5 +20,13 @@ WORKDIR /resume-api-rails
 ADD Gemfile Gemfile.lock /resume-api-rails/
 RUN bundle install
 
-ADD app config.ru public test bin db lib Rakefile config README.md /resume-api-rails/
+COPY bin ./bin
+COPY lib ./lib
+COPY config.ru .
+COPY Rakefile .
+COPY config ./config
+COPY public ./public
+COPY db ./db
+#COPY spec ./spec
+COPY app ./app
 CMD ["puma"]
