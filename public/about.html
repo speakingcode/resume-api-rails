@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Resume API</title>
+  </head>
+
+  <body>
+    <h1>Resume API</h1>
+    <h2>About</h2>
+    <p>
+      Resume API is a Ruby on Rails app that serves up my resume and portfolio. It is an "API Mode" app providing both RESTful and GraphQL APIs.
+    </p>
+    <h2>Data Model</h2>
+    <p>
+    Data is stored in Postgres and modeled via ActiveRecord. The primary model is the Resume model, which contains name, personal info and summary. A Resume has many Jobs (as work_history), many Startups (as startup_experience), many CommunityEfforts, many Skillsets, and many educations (as education).
+    </p>
+    <p>
+      The Project model holds information about projects making up my portfolio.
+    </p>
+    <h2>Endpoints</h2>
+    The following requests are supported:
+    (All endpoints should be prepended with host and `/api/v1`)
+
+    <h4>GET /resume(.:format)</h4>
+    Returns the resume in the optionally-specified format (.json or .pdf). JSON is the default format
+
+    <h4>GET /resume/view</h4>
+    Returns the resume as a PDF document, rendered in the browser.
+
+    <h4>GET /projects(:format)</h4>
+    Returns the collection of projects
+
+    <h2>Deployment</h2>
+    The Resume API Rails application is deployed on Heroku within a Docker container, providing dev-prod parity and one-step deployment to production. The Postgres database URL is configured via a single environment variable which may point to any container or service.
+    <h2>Source Code</h2>
+    Source code and development documentation can be found at <a href="http://github.com/speakingcode/resume-api-rails" target="_blank">github.com/speakingcode/resume-api-rails</a>.
+  </body>
+</html>
