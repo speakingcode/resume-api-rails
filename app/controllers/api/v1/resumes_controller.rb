@@ -11,7 +11,8 @@ module Api
                      :work_history,
                      :startup_experience,
                      :skillsets,
-                     :community_efforts
+                     :community_efforts,
+                     :educations
                     ]
           }
 
