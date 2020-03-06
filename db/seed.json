@@ -49,7 +49,7 @@
         "Built Ruby on Rails REST API with Sequel ORM, Devise and Cancan for ActiveDirectory auth, Bunny RabbitMQ connector, Tire ElasticSearch client, etc.",
         "Collaboratively built distributed architecture with Ruby/Sinatra and Python/Flask microservices for long-running background jobs, RabbitMQ for work queue",
         "Oversaw product conceptualization, development, and launch of the company's first mobile product, CellMaps Mobile for Android",
-        "Developed “BSid” service (Ruby/Sinatra back-end, Backbone front-end) to batch-process cell tower data and generate HTML reports"
+        "Developed 'BSid' service (Ruby/Sinatra back-end, Backbone front-end) to batch-process cell tower data and generate HTML reports"
       ]
     },
     {
