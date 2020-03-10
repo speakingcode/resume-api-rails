@@ -8,7 +8,6 @@ class CreateStartups < ActiveRecord::Migration[5.0]
       t.string :location
       t.string :start_date
       t.string :end_date
-      t.string :team_name
       t.string :url
 
       t.text :highlights,
