@@ -6,10 +6,10 @@ module Types
       Resume.first
     end
 
-    #field :projects, [Types::ProjectType], :null => false
+    field :projects, [Types::ProjectType], :null => false
 
-    #def projects
-    #  Project.all
-    #end
+    def projects
+      Project.all
+    end
   end
 end
